@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.github.chrisbanes.photoview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application>
+
+        <!-- @style/PhotoTheme是图片选择界面样式，文档有提供，不要漏掉添加到values/styles里 -->
+        <activity
+            android:name="com.walkermanx.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PhotoTheme" />
+        <activity
+            android:name="com.walkermanx.photopicker.PhotoPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/PhotoTheme" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 知乎图片选择器，适配7.0系统 -->
+        <provider
+            android:name="com.github.MyFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_file_paths"
+                tools:replace="android:resource" />
+        </provider>
+    </application>
+
+</manifest>

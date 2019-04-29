@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorControlNormal">#333333</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#2F3034</color>
+    <color name="view_color">#d3d3d3</color>
+    <declare-styleable name="Custom_Round_Image_View">
+        <attr format="dimension" name="radius"/>
+        <attr format="dimension" name="left_top_radius"/>
+        <attr format="dimension" name="right_top_radius"/>
+        <attr format="dimension" name="right_bottom_radius"/>
+        <attr format="dimension" name="left_bottom_radius"/>
+    </declare-styleable>
+    <declare-styleable name="RichScrollTextEditor">
+        <attr format="integer" name="rt_editor_image_height"/>
+        <attr format="integer" name="rt_editor_image_bottom"/>
+        <attr format="string" name="rt_editor_text_init_hint"/>
+        <attr format="dimension" name="rt_editor_text_size"/>
+        <attr format="color" name="rt_editor_text_color"/>
+        <attr format="dimension" name="rt_editor_text_line_space"/>
+    </declare-styleable>
+    <declare-styleable name="RichTextView">
+        <attr format="integer" name="rt_view_image_height"/>
+        <attr format="integer" name="rt_view_image_bottom"/>
+        <attr format="string" name="rt_view_text_init_hint"/>
+        <attr format="dimension" name="rt_view_text_size"/>
+        <attr format="color" name="rt_view_text_color"/>
+        <attr format="dimension" name="rt_view_text_line_space"/>
+    </declare-styleable>
+    <dimen name="actionBarSize">56dip</dimen>
+    <string name="app_name">PhotoPicker Demo</string>
+    <string name="multiple_pick_photo">Multiple Pick Photo</string>
+    <string name="pick_camera">camera</string>
+    <string name="pick_one_photo">Pick Single Photo Crop </string>
+    <string name="pick_photo">Pick Photo</string>
+    <string name="pick_photo_gif">Pick Photos (show gif)</string>
+    <string name="pick_photo_without_camera">Pick Photo Without Camera &amp;&amp; Disable Preview</string>
+    <style name="ActionbarPopupTheme">
+        <!--To change the background color of the overflow menu -->
+        <item name="android:background">#5566ee</item>
+        <!--To change the text color of the overflow menu-->
+        <item name="android:textColor">#5566ee</item>
+    </style>
+    <style name="ActionbarTheme">
+        <!--To change the color of the border -->
+        <item name="colorAccent">#5566ee</item>
+        <!--To change the color of the home icon and the overflow icon  -->
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <!--To change the color of the home icon, the overflow icon and the menu icons, -->
+        <item name="android:tint">@color/colorControlNormal</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <!--<item name="homeAsUpIndicator">@mipmap/ic_nav_back</item>-->
+    </style>
+    <style name="PhotoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--toolBar背景-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--status bar 背景-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--toolBar 文本/ icon 着色-->
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+    </style>
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+
+        <!--<item name="actionBarSize">@dimen/actionBarSize</item>-->
+        <!--<item name="actionBarTheme">@style/ActionbarTheme</item>-->
+        <!--<item name="actionBarPopupTheme">@style/ActionbarPopupTheme</item>-->
+    </style>
+</resources>

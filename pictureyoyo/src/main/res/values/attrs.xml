@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--富文本编辑-->
+    <declare-styleable name="RichScrollTextEditor" >
+        <attr name="rt_editor_image_height" format="integer" />
+        <attr name="rt_editor_image_bottom" format="integer" />
+        <attr name="rt_editor_text_init_hint" format="string" />
+        <attr name="rt_editor_text_size" format="dimension" />
+        <attr name="rt_editor_text_color" format="color" />
+        <attr name="rt_editor_text_line_space" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RichTextView" >
+        <attr name="rt_view_image_height" format="integer" />
+        <attr name="rt_view_image_bottom" format="integer" />
+        <attr name="rt_view_text_init_hint" format="string" />
+        <attr name="rt_view_text_size" format="dimension" />
+        <attr name="rt_view_text_color" format="color" />
+        <attr name="rt_view_text_line_space" format="dimension" />
+    </declare-styleable>
+
+
+    <!--圆角图片-->
+    <declare-styleable name="Custom_Round_Image_View">
+        <attr name="radius" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="left_bottom_radius" format="dimension"/>
+    </declare-styleable>
+
+</resources>
